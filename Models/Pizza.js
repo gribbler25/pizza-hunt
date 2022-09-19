@@ -36,8 +36,11 @@ const PizzaSchema = new Schema(
 );
 
 PizzaSchema.virtual("commentCount").get(function () {
-  //a virtual keeps track of computed value that  gets evaluated when you try to access the model's properties, this property is not stored inthe dataBase!
-  return this.comments.length;
+  //a virtual keeps track of computed value that  gets evaluated when you try to access the model's properties..
+  return this.comments.reduce(
+    (total, comment) => total + comment.replies.length + 1,
+    0
+  );
 });
 
 const Pizza = model("Pizza", PizzaSchema);
