@@ -20,7 +20,7 @@
 
 <h2 id="install"> Installation Instruction:</h2>
   This project uses MongoDB through Mongoose library. After cloning code and running 'npm install' at the CL, check if you already have MongoDB by running 'mongod' at the CL. Hit 'ctl-C' then Follow these instructions if you do not get returned to your working directory at the command line: 
-  [MongoDB Documentation](mongodb.com/docs/guides/atlas/account/).  
+  * [MongoDB Docs](mongodb.com/docs/guides/atlas/account/)
   You will need to create an account if you don't already have one.
   
   </br>
